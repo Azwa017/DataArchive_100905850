@@ -14,3 +14,9 @@ print(Dimension_df.head())
 print("\nFact DataFrame:")
 print(Fact_df.head())
 
+# Merge DataFrames based on the 'Country' column
+merged_df = pd.merge(Fact_df, Dimension_df, on='Country')
+
+# View the merged DataFrame
+print("Merged DataFrame:")
+print(merged_df.head())
